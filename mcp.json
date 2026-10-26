@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "tum-formal-verifier-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "TUM Munich",
+        "PROJECT_TICKER": "TUMFORM"
+      },
+      "tools": [
+        {
+          "name": "verify_tumform_invariants",
+          "description": "Verifies deterministic invariants for TUM Formal Verifier AI on TUM Munich."
+        },
+        {
+          "name": "execute_tumform_action",
+          "description": "Executes authenticated Dev Tool state transition."
+        }
+      ]
+    }
+  }
+}
